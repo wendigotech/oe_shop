@@ -1,8 +1,8 @@
 <?php
 
         PG_Blocks_v3::register_block_type( array(
-            'name' => 'starter-shop/shop-feature',
-            'title' => __( 'Shop Feature', 'starter_shop' ),
+            'name' => 'oe-shop/shop-feature',
+            'title' => __( 'Shop Feature', 'oe_shop' ),
             'category' => 'shop',
             'render_template' => 'blocks/shop-feature/shop-feature.php',
             'supports' => array(),
@@ -37,5 +37,5 @@
 </svg>', 'alt' => null), 'title' => 'Free Shipping', 'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod'
             ),
             'dynamic' => true,
-            'version' => '1.0.36'
+            'version' => '1.0.37'
         ) );

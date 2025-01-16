@@ -21,7 +21,7 @@
         return val;
     }
     
-    const block = registerBlockType( 'starter-shop/front-hero', {
+    const block = registerBlockType( 'oe-shop/front-hero', {
         apiVersion: 2,
         title: 'Front Hero',
         description: '',

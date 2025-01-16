@@ -21,7 +21,7 @@
         return val;
     }
     
-    const block = registerBlockType( 'starter-shop/shop-sidebar-heading', {
+    const block = registerBlockType( 'oe-shop/shop-sidebar-heading', {
         apiVersion: 2,
         title: 'Shop Sidebar Heading',
         description: '',

@@ -1,8 +1,8 @@
 <?php
 
         PG_Blocks_v3::register_block_type( array(
-            'name' => 'starter-shop/shop-product-list',
-            'title' => __( 'Shop Product List', 'starter_shop' ),
+            'name' => 'oe-shop/shop-product-list',
+            'title' => __( 'Shop Product List', 'oe_shop' ),
             'category' => 'shop',
             'render_template' => 'blocks/shop-product-list/shop-product-list.php',
             'supports' => array(),
@@ -55,5 +55,5 @@
 'title' => 'Popular this Week', 'count' => '', 'orderby' => '', 'direction' => '', 'sale' => '', 'tags' => '', 'cats' => '', 'show_ratings' => '', 'button_link' => array('post_id' => 0, 'url' => '', 'post_type' => '', 'title' => ''), 'button_label' => 'View More'
             ),
             'dynamic' => true,
-            'version' => '1.0.36'
+            'version' => '1.0.37'
         ) );

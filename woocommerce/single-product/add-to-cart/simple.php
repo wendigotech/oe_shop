@@ -16,7 +16,7 @@ if ( $product->is_in_stock() ) :
 <form class="mb-3" method="post" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" enctype="multipart/form-data" data-product-id="<?php echo absint( $product->get_id() ); ?>">
     <div class="mb-5 row">
         <label for="inputQty" class="col-form-label col-lg-3 col-md-4 col-sm-3 col-xl-2 text-dark">
-            <?php _e( 'Quantity', 'starter_shop' ); ?>
+            <?php _e( 'Quantity', 'oe_shop' ); ?>
         </label>
         <?php do_action( 'woocommerce_before_add_to_cart_quantity' );
 

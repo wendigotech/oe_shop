@@ -21,7 +21,7 @@
         return val;
     }
     
-    const block = registerBlockType( 'starter-shop/shop-feature', {
+    const block = registerBlockType( 'oe-shop/shop-feature', {
         apiVersion: 2,
         title: 'Shop Feature',
         description: '',

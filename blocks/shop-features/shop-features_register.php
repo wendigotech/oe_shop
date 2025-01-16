@@ -1,8 +1,8 @@
 <?php
 
         PG_Blocks_v3::register_block_type( array(
-            'name' => 'starter-shop/shop-features',
-            'title' => __( 'Shop Features', 'starter_shop' ),
+            'name' => 'oe-shop/shop-features',
+            'title' => __( 'Shop Features', 'oe_shop' ),
             'category' => 'shop',
             'render_template' => 'blocks/shop-features/shop-features.php',
             'supports' => array(),
@@ -17,5 +17,5 @@
             ),
             'dynamic' => true,
             'has_inner_blocks' => true,
-            'version' => '1.0.36'
+            'version' => '1.0.37'
         ) );

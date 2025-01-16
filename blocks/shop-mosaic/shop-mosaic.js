@@ -21,7 +21,7 @@
         return val;
     }
     
-    const block = registerBlockType( 'starter-shop/shop-mosaic', {
+    const block = registerBlockType( 'oe-shop/shop-mosaic', {
         apiVersion: 2,
         title: 'Shop Mosaic',
         description: '',

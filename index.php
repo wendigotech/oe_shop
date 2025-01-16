@@ -24,7 +24,7 @@
                                 </article>
                             <?php endwhile; ?>
                         <?php else : ?>
-                            <p><?php _e( 'Sorry, no posts matched your criteria.', 'starter_shop' ); ?></p>
+                            <p><?php _e( 'Sorry, no posts matched your criteria.', 'oe_shop' ); ?></p>
                         <?php endif; ?> 
                     </div>
                     <?php if ( is_active_sidebar( 'info' ) ) : ?>

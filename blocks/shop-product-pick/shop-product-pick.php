@@ -50,7 +50,7 @@
                 <?php wp_reset_postdata(); ?>
             </div>
         <?php else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.', 'starter_shop' ); ?></p>
+            <p><?php _e( 'Sorry, no posts matched your criteria.', 'oe_shop' ); ?></p>
         <?php endif; ?>
         <?php if ( PG_Blocks_v3::getLinkUrl( $args, 'button_link', false ) ) : ?>
             <div class="pb-4 pt-4 text-center">

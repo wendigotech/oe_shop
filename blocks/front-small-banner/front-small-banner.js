@@ -21,13 +21,13 @@
         return val;
     }
     
-    const block = registerBlockType( 'starter-shop/front-small-banner', {
+    const block = registerBlockType( 'oe-shop/front-small-banner', {
         apiVersion: 2,
         title: 'Front Small Banner',
         description: '',
         icon: 'block-default',
         category: 'shop',
-        parent: [ 'starter-shop/front-small-banners' ],
+        parent: [ 'oe-shop/front-small-banners' ],
 
         keywords: [],
         supports: {},

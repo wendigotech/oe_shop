@@ -1,8 +1,8 @@
 <?php
 
         PG_Blocks_v3::register_block_type( array(
-            'name' => 'starter-shop/shop-product-pick',
-            'title' => __( 'Shop Product Pick', 'starter_shop' ),
+            'name' => 'oe-shop/shop-product-pick',
+            'title' => __( 'Shop Product Pick', 'oe_shop' ),
             'category' => 'shop',
             'render_template' => 'blocks/shop-product-pick/shop-product-pick.php',
             'supports' => array(),
@@ -35,5 +35,5 @@
 'title' => 'Hand picked products', 'products' => array(), 'show_ratings' => '', 'button_link' => array('post_id' => 0, 'url' => '', 'post_type' => '', 'title' => ''), 'button_label' => 'View More'
             ),
             'dynamic' => true,
-            'version' => '1.0.36'
+            'version' => '1.0.37'
         ) );

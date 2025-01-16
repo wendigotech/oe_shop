@@ -5,13 +5,13 @@
                 <div class="row"> 
                     <div class="col-xl-4 py-3"> <a href="<?php echo esc_url( home_url() ); ?>" class="d-inline-block fw-bold h2 link-light mb-4 text-decoration-none" rel="home"><?php bloginfo( 'name' ); ?></a> 
                         <?php if ( get_theme_mod( 'shop_footer_text' ) ) : ?>
-                            <p class="mb-3"><?php echo get_theme_mod( 'shop_footer_text', __( 'Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.', 'starter_shop' ) ); ?></p>
+                            <p class="mb-3"><?php echo get_theme_mod( 'shop_footer_text', __( 'Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.', 'oe_shop' ) ); ?></p>
                         <?php endif; ?> 
-                        <div class="mb-4"> <a href="<?php echo get_theme_mod( 'shop_footer_phone_url', '#' ); ?>" class="link-light text-decoration-none"><?php echo get_theme_mod( 'shop_footer_phone', __( '+1 234 567-890', 'starter_shop' ) ); ?></a> <br/> <a href="<?php echo get_theme_mod( 'shop_footer_email_url', '#' ); ?>" class="link-light text-decoration-none"><?php echo get_theme_mod( 'shop_footer_email', __( 'hello@company.com', 'starter_shop' ) ); ?></a> 
+                        <div class="mb-4"> <a href="<?php echo get_theme_mod( 'shop_footer_phone_url', '#' ); ?>" class="link-light text-decoration-none"><?php echo get_theme_mod( 'shop_footer_phone', __( '+1 234 567-890', 'oe_shop' ) ); ?></a> <br/> <a href="<?php echo get_theme_mod( 'shop_footer_email_url', '#' ); ?>" class="link-light text-decoration-none"><?php echo get_theme_mod( 'shop_footer_email', __( 'hello@company.com', 'oe_shop' ) ); ?></a> 
                         </div>                         
                     </div>                     
                     <div class="col-md-3 col-xl-2 py-3"> 
-                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white"><?php echo get_theme_mod( 'shop_footer_colum1_heading', __( 'About', 'starter_shop' ) ); ?></h2> 
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white"><?php echo get_theme_mod( 'shop_footer_colum1_heading', __( 'About', 'oe_shop' ) ); ?></h2> 
                         <?php if ( has_nav_menu( 'footer_1' ) ) : ?>
                             <?php
                                 PG_Smart_Walker_Nav_Menu::init();
@@ -26,7 +26,7 @@
                         <?php endif; ?> 
                     </div>                     
                     <div class="col-md-3 col-xl-2 py-3"> 
-                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white"><?php echo get_theme_mod( 'shop_footer_column2_heading', __( 'Services', 'starter_shop' ) ); ?></h2> 
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white"><?php echo get_theme_mod( 'shop_footer_column2_heading', __( 'Services', 'oe_shop' ) ); ?></h2> 
                         <?php if ( has_nav_menu( 'footer_2' ) ) : ?>
                             <?php
                                 PG_Smart_Walker_Nav_Menu::init();
@@ -41,8 +41,8 @@
                         <?php endif; ?> 
                     </div>                     
                     <div class="col-md-6 col-xl-4 py-3"> 
-                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white"><?php echo get_theme_mod( 'shop_footer_column3_heading', __( 'Subscribe', 'starter_shop' ) ); ?></h2>
-                        <p class="mb-3"><?php echo get_theme_mod( 'shop_footer_subscribe_text', __( 'Subscribe to our newsletter and get exclusive updates directly in your inbox.', 'starter_shop' ) ); ?></p>
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white"><?php echo get_theme_mod( 'shop_footer_column3_heading', __( 'Subscribe', 'oe_shop' ) ); ?></h2>
+                        <p class="mb-3"><?php echo get_theme_mod( 'shop_footer_subscribe_text', __( 'Subscribe to our newsletter and get exclusive updates directly in your inbox.', 'oe_shop' ) ); ?></p>
                         <?php $mailer = new PG_Simple_Form_Mailer(); ?>
                         <?php $mailer->process( array(
                                 'form_id' => 'footer_subscribe_mailer_id',
@@ -64,7 +64,7 @@
                         <?php if( $mailer->processed ) : ?>
                             <?php echo $mailer->message; ?>
                         <?php endif; ?>
-                        <h2 class="fw-normal h5 mb-3 text-uppercase text-white"><?php echo get_theme_mod( 'shop_footer_social_heading', __( 'Get Social', 'starter_shop' ) ); ?></h2>
+                        <h2 class="fw-normal h5 mb-3 text-uppercase text-white"><?php echo get_theme_mod( 'shop_footer_social_heading', __( 'Get Social', 'oe_shop' ) ); ?></h2>
                         <div class="d-inline-flex flex-wrap"> 
                             <?php if ( get_theme_mod( 'shop_footer_social_fb' ) ) : ?>
                                 <a href="<?php echo get_theme_mod( 'shop_footer_social_fb', '#' ); ?>" class="link-light p-1" aria-label="facebook link"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
@@ -98,9 +98,10 @@
                     <hr class="border-secondary mt-0"/> 
                     <div class="align-items-center row">
                         <div class="col-md pb-2 pt-2">
-                            <p class="mb-0">&copy; <span><?php echo date( 'Y' ); ?></span> | <span><?php echo get_theme_mod( 'shop_footer_copyright', __( 'All Rights Reserved - Company Name', 'starter_shop' ) ); ?></span></p>
+                            <p class="mb-0">&copy; <span><?php echo date( 'Y' ); ?></span> | <span><?php echo get_theme_mod( 'shop_footer_copyright', __( 'All Rights Reserved - Company Name', 'oe_shop' ) ); ?></span></p>
                         </div>
-                        <div class="col-md-auto pb-2 pt-2"><a href="<?php echo get_theme_mod( 'shop_footer_privacy_link', '#' ); ?>" class="link-light text-decoration-none"><?php _e( 'Privacy Policy', 'starter_shop' ); ?></a> | <a href="<?php echo get_theme_mod( 'shop_footer_terms_link', '#' ); ?>" class="link-light text-decoration-none"><?php _e( 'Terms of Use', 'starter_shop' ); ?></a>
+                        <div class="col-md-auto pb-2 pt-2">
+                            <a href="<?php echo get_theme_mod( 'shop_footer_privacy_link', '#' ); ?>" class="link-light text-decoration-none"><?php _e( 'Privacy Policy', 'oe_shop' ); ?></a> | <a href="<?php echo get_theme_mod( 'shop_footer_terms_link', '#' ); ?>" class="link-light text-decoration-none"><?php _e( 'Terms of Use', 'oe_shop' ); ?></a>
                         </div>
                     </div>                     
                 </div>                 

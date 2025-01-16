@@ -1,8 +1,8 @@
 <?php
 
         PG_Blocks_v3::register_block_type( array(
-            'name' => 'starter-shop/shop-newsletter',
-            'title' => __( 'Shop Newsletter', 'starter_shop' ),
+            'name' => 'oe-shop/shop-newsletter',
+            'title' => __( 'Shop Newsletter', 'oe_shop' ),
             'category' => 'shop',
             'render_template' => 'blocks/shop-newsletter/shop-newsletter.php',
             'supports' => array(),
@@ -23,5 +23,5 @@
 'title' => 'Join our newsletter and get 15% off', 'subtitle' => 'Sign up for our newsletter to receive updates and exclusive offers'
             ),
             'dynamic' => true,
-            'version' => '1.0.36'
+            'version' => '1.0.37'
         ) );

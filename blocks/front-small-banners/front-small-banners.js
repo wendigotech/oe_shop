@@ -21,7 +21,7 @@
         return val;
     }
     
-    const block = registerBlockType( 'starter-shop/front-small-banners', {
+    const block = registerBlockType( 'oe-shop/front-small-banners', {
         apiVersion: 2,
         title: 'Front Small Banners',
         description: '',
@@ -38,11 +38,11 @@
             
             
             const innerBlocksProps = useInnerBlocksProps({ className: 'justify-content-center row' }, {
-                allowedBlocks: [ 'starter-shop/front-small-banner' ],
+                allowedBlocks: [ 'oe-shop/front-small-banner' ],
                 template: [
-    [ 'starter-shop/front-small-banner', {} ],
-    [ 'starter-shop/front-small-banner', {} ],
-    [ 'starter-shop/front-small-banner', {} ]
+    [ 'oe-shop/front-small-banner', {} ],
+    [ 'oe-shop/front-small-banner', {} ],
+    [ 'oe-shop/front-small-banner', {} ]
 ],
                 orientation: 'horizontal',
             } );

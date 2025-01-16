@@ -1,8 +1,8 @@
 <?php
 
         PG_Blocks_v3::register_block_type( array(
-            'name' => 'starter-shop/shop-sidebar-search',
-            'title' => __( 'Shop Sidebar Search', 'starter_shop' ),
+            'name' => 'oe-shop/shop-sidebar-search',
+            'title' => __( 'Shop Sidebar Search', 'oe_shop' ),
             'category' => 'shop',
             'render_template' => 'blocks/shop-sidebar-search/shop-sidebar-search.php',
             'supports' => array(),
@@ -16,5 +16,5 @@
 
             ),
             'dynamic' => true,
-            'version' => '1.0.36'
+            'version' => '1.0.37'
         ) );

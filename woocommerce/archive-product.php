@@ -56,7 +56,7 @@
             <?php if( !empty( $terms ) && !is_wp_error( $terms ) ) : ?>
                 <section class="bg-light pb-5 pg-lib-item pt-5 text-secondary">
                     <div class="container pb-5 pt-5">
-                        <h1 class="h2 mb-4 text-dark"><?php _e( 'Subcategories', 'starter_shop' ); ?></h1>
+                        <h1 class="h2 mb-4 text-dark"><?php _e( 'Subcategories', 'oe_shop' ); ?></h1>
                         <div class="g-md-5 gy-4 justify-content-center row row-cols-lg-3 row-cols-sm-2">
                             <?php foreach( $terms as $term ) : ?>
                                 <div> <a href="<?php echo esc_url( get_term_link( $term, 'product_cat' ) ); ?>" class="d-block link-dark position-relative"><?php ob_start(); woocommerce_subcategory_thumbnail( $term ); $image_html = ob_get_clean(); ?><?php if( $image_html ) : ?><?php 

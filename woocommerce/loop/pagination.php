@@ -27,7 +27,7 @@ PG_WCPagination::$args = apply_filters(
 ?>
 <nav>
     <ul class="justify-content-center  pagination">
-        <li class="<?php if(!( PG_WCPagination::getCurrentPage() > 1 )) echo 'disabled'; ?> page-item"><a class="link-secondary page-link" <?php echo PG_WCPagination::getPreviousHrefAttribute(); ?>><?php _e( 'Previous', 'starter_shop' ); ?></a>
+        <li class="<?php if(!( PG_WCPagination::getCurrentPage() > 1 )) echo 'disabled'; ?> page-item"><a class="link-secondary page-link" <?php echo PG_WCPagination::getPreviousHrefAttribute(); ?>><?php _e( 'Previous', 'oe_shop' ); ?></a>
         </li>
         <?php $dots = false; ?>
         <?php for( $page_num = 1; $page_num <= PG_WCPagination::getMaxPages(); $page_num++) : ?>
@@ -47,7 +47,7 @@ PG_WCPagination::$args = apply_filters(
                 <?php endif; ?>
             <?php endif; ?>
         <?php endfor; ?>
-        <li class="<?php if(!( PG_WCPagination::getCurrentPage() < PG_WCPagination::getMaxPages() )) echo 'disabled'; ?> page-item"><a class="link-secondary page-link" <?php echo PG_WCPagination::getNextHrefAttribute(); ?>><?php _e( 'Next', 'starter_shop' ); ?></a>
+        <li class="<?php if(!( PG_WCPagination::getCurrentPage() < PG_WCPagination::getMaxPages() )) echo 'disabled'; ?> page-item"><a class="link-secondary page-link" <?php echo PG_WCPagination::getNextHrefAttribute(); ?>><?php _e( 'Next', 'oe_shop' ); ?></a>
         </li>
     </ul>
 </nav>

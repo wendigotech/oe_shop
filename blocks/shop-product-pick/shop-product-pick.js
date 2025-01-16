@@ -21,7 +21,7 @@
         return val;
     }
     
-    const block = registerBlockType( 'starter-shop/shop-product-pick', {
+    const block = registerBlockType( 'oe-shop/shop-product-pick', {
         apiVersion: 2,
         title: 'Shop Product Pick',
         description: '',

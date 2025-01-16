@@ -13,7 +13,7 @@ if ( $related_products ) : ?>
     <div class="container pb-5 pt-5">
         <div class="align-items-center gy-4 row">
             <div class="col">
-                <h2 class="h6"><?php _e( 'How about these great products?', 'starter_shop' ); ?></h2>
+                <h2 class="h6"><?php _e( 'How about these great products?', 'oe_shop' ); ?></h2>
                 <?php if( $heading ) : ?>
                     <h3 class="fw-bold h2 text-dark"><?php echo esc_html( $heading ); ?></h3>
                 <?php endif; ?>

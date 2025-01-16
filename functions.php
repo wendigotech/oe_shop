@@ -8,7 +8,7 @@ function starter_shop_setup() {
      * Translations can be filed in the /languages/ directory.
      */
     /* Pinegrow generated Load Text Domain Begin */
-    load_theme_textdomain( 'starter_shop', get_template_directory() . '/languages' );
+    load_theme_textdomain( 'oe_shop', get_template_directory() . '/languages' );
     /* Pinegrow generated Load Text Domain End */
 
     // Add default posts and comments RSS feed links to head.
@@ -37,9 +37,9 @@ function starter_shop_setup() {
      */
     /* Pinegrow generated Register Menus Begin */
 
-    register_nav_menu(  'footer_1', __( 'Footer Menu 1', 'starter_shop' )  );
+    register_nav_menu(  'footer_1', __( 'Footer Menu 1', 'oe_shop' )  );
 
-    register_nav_menu(  'footer_2', __( 'Footer Menu 2', 'starter_shop' )  );
+    register_nav_menu(  'footer_2', __( 'Footer Menu 2', 'oe_shop' )  );
 
     /* Pinegrow generated Register Menus End */
     
@@ -131,7 +131,7 @@ function starter_shop_widgets_init() {
     /* Pinegrow generated Register Sidebars Begin */
 
     register_sidebar( array(
-        'name' => __( 'Information', 'starter_shop' ),
+        'name' => __( 'Information', 'oe_shop' ),
         'id' => 'info',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
@@ -140,7 +140,7 @@ function starter_shop_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name' => __( 'Shop sidebar', 'starter_shop' ),
+        'name' => __( 'Shop sidebar', 'oe_shop' ),
         'id' => 'shop',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
@@ -163,30 +163,30 @@ function starter_shop_customize_register( $wp_customize ) {
     /* Pinegrow generated Customizer Controls Begin */
 
     $wp_customize->add_section( 'shop_footer', array(
-        'title' => __( 'Shop footer', 'starter_shop' )
+        'title' => __( 'Shop footer', 'oe_shop' )
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
     $wp_customize->add_setting( 'shop_footer_text', array(
         'type' => 'theme_mod',
-        'default' => __( 'Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.', 'starter_shop' ),
+        'default' => __( 'Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.', 'oe_shop' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
     $wp_customize->add_control( 'shop_footer_text', array(
-        'label' => __( 'Text', 'starter_shop' ),
+        'label' => __( 'Text', 'oe_shop' ),
         'type' => 'textarea',
         'section' => 'shop_footer'
     ));
 
     $wp_customize->add_setting( 'shop_footer_phone', array(
         'type' => 'theme_mod',
-        'default' => __( '+1 234 567-890', 'starter_shop' ),
+        'default' => __( '+1 234 567-890', 'oe_shop' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
     $wp_customize->add_control( 'shop_footer_phone', array(
-        'label' => __( 'Phone number', 'starter_shop' ),
+        'label' => __( 'Phone number', 'oe_shop' ),
         'type' => 'text',
         'section' => 'shop_footer'
     ));
@@ -197,19 +197,19 @@ function starter_shop_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'shop_footer_phone_url', array(
-        'label' => __( 'Phone url', 'starter_shop' ),
+        'label' => __( 'Phone url', 'oe_shop' ),
         'type' => 'url',
         'section' => 'shop_footer'
     ));
 
     $wp_customize->add_setting( 'shop_footer_email', array(
         'type' => 'theme_mod',
-        'default' => __( 'hello@company.com', 'starter_shop' ),
+        'default' => __( 'hello@company.com', 'oe_shop' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
     $wp_customize->add_control( 'shop_footer_email', array(
-        'label' => __( 'Email', 'starter_shop' ),
+        'label' => __( 'Email', 'oe_shop' ),
         'type' => 'text',
         'section' => 'shop_footer'
     ));
@@ -220,67 +220,67 @@ function starter_shop_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'shop_footer_email_url', array(
-        'label' => __( 'Email url', 'starter_shop' ),
+        'label' => __( 'Email url', 'oe_shop' ),
         'type' => 'url',
         'section' => 'shop_footer'
     ));
 
     $wp_customize->add_setting( 'shop_footer_colum1_heading', array(
         'type' => 'theme_mod',
-        'default' => __( 'About', 'starter_shop' ),
+        'default' => __( 'About', 'oe_shop' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
     $wp_customize->add_control( 'shop_footer_colum1_heading', array(
-        'label' => __( 'Column 1 Heading', 'starter_shop' ),
+        'label' => __( 'Column 1 Heading', 'oe_shop' ),
         'type' => 'text',
         'section' => 'shop_footer'
     ));
 
     $wp_customize->add_setting( 'shop_footer_column2_heading', array(
         'type' => 'theme_mod',
-        'default' => __( 'Services', 'starter_shop' ),
+        'default' => __( 'Services', 'oe_shop' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
     $wp_customize->add_control( 'shop_footer_column2_heading', array(
-        'label' => __( 'Column 2 Heading', 'starter_shop' ),
+        'label' => __( 'Column 2 Heading', 'oe_shop' ),
         'type' => 'text',
         'section' => 'shop_footer'
     ));
 
     $wp_customize->add_setting( 'shop_footer_column3_heading', array(
         'type' => 'theme_mod',
-        'default' => __( 'Subscribe', 'starter_shop' ),
+        'default' => __( 'Subscribe', 'oe_shop' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
     $wp_customize->add_control( 'shop_footer_column3_heading', array(
-        'label' => __( 'Column 3 Heading', 'starter_shop' ),
+        'label' => __( 'Column 3 Heading', 'oe_shop' ),
         'type' => 'text',
         'section' => 'shop_footer'
     ));
 
     $wp_customize->add_setting( 'shop_footer_subscribe_text', array(
         'type' => 'theme_mod',
-        'default' => __( 'Subscribe to our newsletter and get exclusive updates directly in your inbox.', 'starter_shop' ),
+        'default' => __( 'Subscribe to our newsletter and get exclusive updates directly in your inbox.', 'oe_shop' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
     $wp_customize->add_control( 'shop_footer_subscribe_text', array(
-        'label' => __( 'Subscribe text', 'starter_shop' ),
+        'label' => __( 'Subscribe text', 'oe_shop' ),
         'type' => 'text',
         'section' => 'shop_footer'
     ));
 
     $wp_customize->add_setting( 'shop_footer_social_heading', array(
         'type' => 'theme_mod',
-        'default' => __( 'Get Social', 'starter_shop' ),
+        'default' => __( 'Get Social', 'oe_shop' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
     $wp_customize->add_control( 'shop_footer_social_heading', array(
-        'label' => __( 'Social Heading', 'starter_shop' ),
+        'label' => __( 'Social Heading', 'oe_shop' ),
         'type' => 'text',
         'section' => 'shop_footer'
     ));
@@ -291,7 +291,7 @@ function starter_shop_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'shop_footer_social_fb', array(
-        'label' => __( 'Facebook', 'starter_shop' ),
+        'label' => __( 'Facebook', 'oe_shop' ),
         'type' => 'url',
         'section' => 'shop_footer'
     ));
@@ -302,7 +302,7 @@ function starter_shop_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'shop_footer_social_tw', array(
-        'label' => __( 'Twitter', 'starter_shop' ),
+        'label' => __( 'Twitter', 'oe_shop' ),
         'type' => 'url',
         'section' => 'shop_footer'
     ));
@@ -313,7 +313,7 @@ function starter_shop_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'shop_footer_social_ig', array(
-        'label' => __( 'Instagram', 'starter_shop' ),
+        'label' => __( 'Instagram', 'oe_shop' ),
         'type' => 'url',
         'section' => 'shop_footer'
     ));
@@ -324,7 +324,7 @@ function starter_shop_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'shop_footer_social_ln', array(
-        'label' => __( 'LinkedIn', 'starter_shop' ),
+        'label' => __( 'LinkedIn', 'oe_shop' ),
         'type' => 'url',
         'section' => 'shop_footer'
     ));
@@ -335,19 +335,19 @@ function starter_shop_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'shop_footer_social_yt', array(
-        'label' => __( 'YouTube', 'starter_shop' ),
+        'label' => __( 'YouTube', 'oe_shop' ),
         'type' => 'url',
         'section' => 'shop_footer'
     ));
 
     $wp_customize->add_setting( 'shop_footer_copyright', array(
         'type' => 'theme_mod',
-        'default' => __( 'All Rights Reserved - Company Name', 'starter_shop' ),
+        'default' => __( 'All Rights Reserved - Company Name', 'oe_shop' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
     $wp_customize->add_control( 'shop_footer_copyright', array(
-        'label' => __( 'Copyright notice', 'starter_shop' ),
+        'label' => __( 'Copyright notice', 'oe_shop' ),
         'type' => 'text',
         'section' => 'shop_footer'
     ));
@@ -358,7 +358,7 @@ function starter_shop_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'shop_footer_privacy_link', array(
-        'label' => __( 'Privacy Policy Link', 'starter_shop' ),
+        'label' => __( 'Privacy Policy Link', 'oe_shop' ),
         'type' => 'url',
         'section' => 'shop_footer'
     ));
@@ -369,7 +369,7 @@ function starter_shop_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( 'shop_footer_terms_link', array(
-        'label' => __( 'Terms link', 'starter_shop' ),
+        'label' => __( 'Terms link', 'oe_shop' ),
         'type' => 'url',
         'section' => 'shop_footer'
     ));
@@ -386,38 +386,38 @@ if ( ! function_exists( 'starter_shop_enqueue_scripts' ) ) :
 
         /* Pinegrow generated Enqueue Scripts Begin */
 
-    wp_enqueue_script( 'starter_shop-custom', get_template_directory_uri() . '/custom.js', array( 'jquery' ), '1.0.36', true );
+    wp_enqueue_script( 'oe_shop-custom', get_template_directory_uri() . '/custom.js', array( 'jquery' ), '1.0.37', true );
 
-    wp_deregister_script( 'starter_shop-popper' );
-    wp_enqueue_script( 'starter_shop-popper', get_template_directory_uri() . '/assets/js/popper.min.js', [], '1.0.36', true);
+    wp_deregister_script( 'oe_shop-popper' );
+    wp_enqueue_script( 'oe_shop-popper', get_template_directory_uri() . '/assets/js/popper.min.js', [], '1.0.37', true);
 
-    wp_deregister_script( 'starter_shop-bootstrap' );
-    wp_enqueue_script( 'starter_shop-bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', [], '1.0.36', true);
+    wp_deregister_script( 'oe_shop-bootstrap' );
+    wp_enqueue_script( 'oe_shop-bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', [], '1.0.37', true);
 
     /* Pinegrow generated Enqueue Scripts End */
 
         /* Pinegrow generated Enqueue Styles Begin */
 
-    wp_deregister_style( 'starter_shop-bootstrap' );
-    wp_enqueue_style( 'starter_shop-bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css', [], '1.0.36', 'all');
+    wp_deregister_style( 'oe_shop-bootstrap' );
+    wp_enqueue_style( 'oe_shop-bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css', [], '1.0.37', 'all');
 
-    wp_deregister_style( 'starter_shop-blocks' );
-    wp_enqueue_style( 'starter_shop-blocks', get_template_directory_uri() . '/blocks.css', [], '1.0.36', 'all');
+    wp_deregister_style( 'oe_shop-blocks' );
+    wp_enqueue_style( 'oe_shop-blocks', get_template_directory_uri() . '/blocks.css', [], '1.0.37', 'all');
 
-    wp_deregister_style( 'starter_shop-style' );
-    wp_enqueue_style( 'starter_shop-style', get_bloginfo('stylesheet_url'), [], '1.0.36', 'all');
+    wp_deregister_style( 'oe_shop-style' );
+    wp_enqueue_style( 'oe_shop-style', get_bloginfo('stylesheet_url'), [], '1.0.37', 'all');
 
-    wp_deregister_style( 'starter_shop-custom' );
-    wp_enqueue_style( 'starter_shop-custom', get_template_directory_uri() . '/custom.css', [], '1.0.36', 'all');
+    wp_deregister_style( 'oe_shop-custom' );
+    wp_enqueue_style( 'oe_shop-custom', get_template_directory_uri() . '/custom.css', [], '1.0.37', 'all');
 
-    wp_deregister_style( 'starter_shop-gallery' );
-    wp_enqueue_style( 'starter_shop-gallery', get_template_directory_uri() . '/gallery.css', [], '1.0.36', 'all');
+    wp_deregister_style( 'oe_shop-gallery' );
+    wp_enqueue_style( 'oe_shop-gallery', get_template_directory_uri() . '/gallery.css', [], '1.0.37', 'all');
 
-    wp_deregister_style( 'starter_shop-button' );
-    wp_enqueue_style( 'starter_shop-button', get_template_directory_uri() . '/button.css', [], '1.0.36', 'all');
+    wp_deregister_style( 'oe_shop-button' );
+    wp_enqueue_style( 'oe_shop-button', get_template_directory_uri() . '/button.css', [], '1.0.37', 'all');
 
-    wp_deregister_style( 'starter_shop-notice' );
-    wp_enqueue_style( 'starter_shop-notice', get_template_directory_uri() . '/notice.css', [], '1.0.36', 'all');
+    wp_deregister_style( 'oe_shop-notice' );
+    wp_enqueue_style( 'oe_shop-notice', get_template_directory_uri() . '/notice.css', [], '1.0.37', 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 
@@ -464,8 +464,8 @@ add_action('after_setup_theme', 'starter_shop_setup_theme_supports');
 
     /* This filter lets us multiple variants of the same template name. It also handles locating the templates that are present in the theme or plugin. */        
     add_filter( 'wc_get_template', function( $template, $template_name, $args, $template_path, $default_path ) {
-        global $pg_wc_use_template, $pg_wc_use_template_cache_starter_shop;
-        if(!isset($pg_wc_use_template_cache_starter_shop)) $pg_wc_use_template_cache_starter_shop = array();
+        global $pg_wc_use_template, $pg_wc_use_template_cache_oe_shop;
+        if(!isset($pg_wc_use_template_cache_oe_shop)) $pg_wc_use_template_cache_oe_shop = array();
         
         if( !empty($pg_wc_use_template) ) {
             $template_variant = trailingslashit( get_template_directory() ) . 'woocommerce/' . str_replace( '.php', '-'.$pg_wc_use_template.'.php', $template_name);
@@ -475,15 +475,15 @@ add_action('after_setup_theme', 'starter_shop_setup_theme_supports');
             $template_variant = trailingslashit( get_template_directory() ) . 'woocommerce/' . $template_name;
         }
             
-        if(isset($pg_wc_use_template_cache_starter_shop[ $template_key ])) {
-            if($pg_wc_use_template_cache_starter_shop[ $template_key ]) {
+        if(isset($pg_wc_use_template_cache_oe_shop[ $template_key ])) {
+            if($pg_wc_use_template_cache_oe_shop[ $template_key ]) {
                 $template = $template_variant;
             }
         } else if(file_exists($template_variant)) {
             $template = $template_variant;
-            $pg_wc_use_template_cache_starter_shop[ $template_key ] = true;
+            $pg_wc_use_template_cache_oe_shop[ $template_key ] = true;
         } else {
-            $pg_wc_use_template_cache_starter_shop[ $template_key ] = false;
+            $pg_wc_use_template_cache_oe_shop[ $template_key ] = false;
         }
  
         return $template;
@@ -551,7 +551,7 @@ function starter_shop_register_blocks_categories( $categories ) {
 
 $categories = array_merge( $categories, array( array(
         'slug' => 'shop',
-        'title' => __( 'Shop blocks', 'starter_shop' )
+        'title' => __( 'Shop blocks', 'oe_shop' )
     ) ) );
 
     /* Pinegrow generated Register Blocks Category End */

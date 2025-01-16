@@ -6,7 +6,7 @@ global $product;
 <div class="row woocommerce-variation-add-to-cart">
     <?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
     <label for="inputQty" class="col-form-label col-lg-3 col-md-4 col-sm-3 col-xl-2 text-dark">
-        <?php _e( 'Quantity', 'starter_shop' ); ?>
+        <?php _e( 'Quantity', 'oe_shop' ); ?>
     </label>
     <?php do_action( 'woocommerce_before_add_to_cart_quantity' );
         

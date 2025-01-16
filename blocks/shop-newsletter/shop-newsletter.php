@@ -15,7 +15,7 @@
                             <div class="bg-white border input-group overflow-hidden p-1">
                                 <input type="text" class="border-0 form-control pe-3 ps-3" placeholder="Enter email..." aria-label="Recipient's email" aria-describedby="newsletter-submit" name="newsletter_mailer_id_1" value="<?php echo ( isset( $_POST['newsletter_mailer_id_1'] ) ? $_POST['newsletter_mailer_id_1'] : '' ); ?>"/>
                                 <button class="btn btn-dark pb-2 pe-4 ps-4 pt-2 rounded-0" type="submit" id="newsletter-submit">
-                                    <?php _e( 'Sign Up', 'starter_shop' ); ?>
+                                    <?php _e( 'Sign Up', 'oe_shop' ); ?>
                                 </button>
                             </div>
                             <input type="hidden" name="newsletter_mailer_id" value="1"/>
@@ -26,7 +26,7 @@
                             <?php echo $mailer->message; ?>
                         <?php else : ?>
                             <div class="alert alert-success" style="display:block;">
-                                <?php _e( 'Thank you for subscribing!', 'starter_shop' ); ?>
+                                <?php _e( 'Thank you for subscribing!', 'oe_shop' ); ?>
                             </div>
                         <?php endif; ?>
                     <?php endif; ?>

@@ -21,7 +21,7 @@
         return val;
     }
     
-    const block = registerBlockType( 'starter-shop/shop-features', {
+    const block = registerBlockType( 'oe-shop/shop-features', {
         apiVersion: 2,
         title: 'Shop Features',
         description: '',
@@ -38,11 +38,11 @@
             
             
             const innerBlocksProps = useInnerBlocksProps({ className: 'justify-content-center row' }, {
-                allowedBlocks: [ 'starter-shop/shop-feature' ],
+                allowedBlocks: [ 'oe-shop/shop-feature' ],
                 template: [
-    [ 'starter-shop/shop-feature', {} ],
-    [ 'starter-shop/shop-feature', {} ],
-    [ 'starter-shop/shop-feature', {} ]
+    [ 'oe-shop/shop-feature', {} ],
+    [ 'oe-shop/shop-feature', {} ],
+    [ 'oe-shop/shop-feature', {} ]
 ],
             } );
                             

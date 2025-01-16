@@ -20,12 +20,12 @@
                                             <path fill="none" d="M0 0h24v24H0z"></path>
                                             <path d="M7 8V6a5 5 0 1 1 10 0v2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3zm0 2H5v10h14V10h-2v2h-2v-2H9v2H7v-2zm2-2h6V6a3 3 0 0 0-6 0v2z"></path>
                                         </g>
-                                    </svg> <span class="small"><?php _e( '(0)', 'starter_shop' ); ?></span></span><?php endif; ?><?php if( WC()->cart->get_cart_contents_count() > 0 ) : ?><span class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em">
+                                    </svg> <span class="small"><?php _e( '(0)', 'oe_shop' ); ?></span></span><?php endif; ?><?php if( WC()->cart->get_cart_contents_count() > 0 ) : ?><span class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em">
                                         <g>
                                             <path fill="none" d="M0 0h24v24H0z"></path>
                                             <path d="M7 8V6a5 5 0 1 1 10 0v2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3zm0 2H5v10h14V10h-2v2h-2v-2H9v2H7v-2zm2-2h6V6a3 3 0 0 0-6 0v2z"></path>
                                         </g>
-                                    </svg> <span class="small"><?php echo wp_kses_data( sprintf( _n( '(%d)', '(%d)', WC()->cart->get_cart_contents_count(), 'starter_shop' ), WC()->cart->get_cart_contents_count() ) ); ?></span></span><?php endif; ?> </a> 
+                                    </svg> <span class="small"><?php echo wp_kses_data( sprintf( _n( '(%d)', '(%d)', WC()->cart->get_cart_contents_count(), 'oe_shop' ), WC()->cart->get_cart_contents_count() ) ); ?></span></span><?php endif; ?> </a> 
                     </li>                     
                 </ul>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-3" aria-controls="navbarNavDropdown-3" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> 
@@ -34,8 +34,7 @@
                     <?php if ( has_nav_menu( 'primary' ) ) : ?>
                         <?php
                             PG_Smart_Walker_Nav_Menu::init();
-                            PG_Smart_Walker_Nav_Menu::$options['template'] = '<li class="nav-item">
-                                                        <a class="nav-link px-lg-3 py-lg-4 {CLASSES}" aria-current="page" id="{ID}" {ATTRS}>{TITLE}</a>
+                            PG_Smart_Walker_Nav_Menu::$options['template'] = '<li class="nav-item"><a class="nav-link px-lg-3 py-lg-4 {CLASSES}" aria-current="page" id="{ID}" {ATTRS}>{TITLE}</a>
                                                     </li>';
                             PG_Smart_Walker_Nav_Menu::$options['current_class'] = 'active';
                             wp_nav_menu( array(

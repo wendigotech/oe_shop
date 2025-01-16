@@ -21,7 +21,7 @@
         return val;
     }
     
-    const block = registerBlockType( 'starter-shop/shop-newsletter', {
+    const block = registerBlockType( 'oe-shop/shop-newsletter', {
         apiVersion: 2,
         title: 'Shop Newsletter',
         description: '',

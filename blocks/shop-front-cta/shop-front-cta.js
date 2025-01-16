@@ -21,7 +21,7 @@
         return val;
     }
     
-    const block = registerBlockType( 'starter-shop/shop-front-cta', {
+    const block = registerBlockType( 'oe-shop/shop-front-cta', {
         apiVersion: 2,
         title: 'Shop Front CTA',
         description: '',

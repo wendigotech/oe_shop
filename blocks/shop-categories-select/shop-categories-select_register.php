@@ -1,8 +1,8 @@
 <?php
 
         PG_Blocks_v3::register_block_type( array(
-            'name' => 'starter-shop/shop-categories-select',
-            'title' => __( 'Shop Categories Select', 'starter_shop' ),
+            'name' => 'oe-shop/shop-categories-select',
+            'title' => __( 'Shop Categories Select', 'oe_shop' ),
             'category' => 'shop',
             'render_template' => 'blocks/shop-categories-select/shop-categories-select.php',
             'supports' => array(),
@@ -23,5 +23,5 @@
 'list' => '', 'title' => 'Selected categories'
             ),
             'dynamic' => true,
-            'version' => '1.0.36'
+            'version' => '1.0.37'
         ) );
