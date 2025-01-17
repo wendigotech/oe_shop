@@ -96,13 +96,12 @@
                 </div>                 
                 <div class="pb-3 pt-3 small"> 
                     <hr class="border-secondary mt-0"/> 
-                    <div class="align-items-center row">
-                        <div class="col-md pb-2 pt-2">
-                            <p class="mb-0">&copy; <span><?php echo date( 'Y' ); ?></span> | <span><?php echo get_theme_mod( 'shop_footer_copyright', __( 'All Rights Reserved - Company Name', 'oe_shop' ) ); ?></span></p>
-                        </div>
-                        <div class="col-md-auto pb-2 pt-2">
-                            <a href="<?php echo get_theme_mod( 'shop_footer_privacy_link', '#' ); ?>" class="link-light text-decoration-none"><?php _e( 'Privacy Policy', 'oe_shop' ); ?></a> | <a href="<?php echo get_theme_mod( 'shop_footer_terms_link', '#' ); ?>" class="link-light text-decoration-none"><?php _e( 'Terms of Use', 'oe_shop' ); ?></a>
-                        </div>
+                    <div class="align-items-center row"> 
+                        <div class="col-md pb-2 pt-2"> 
+                            <p class="mb-0">&copy; <span><?php echo date( 'Y' ); ?></span> | <span><?php echo get_theme_mod( 'shop_footer_copyright', __( 'Alle Rechte vorbehalten - Firmenname', 'oe_shop' ) ); ?></span></p> 
+                        </div>                         
+                        <div class="col-md-auto pb-2 pt-2"><a href="<?php echo get_theme_mod( 'shop_footer_privacy_link', '#' ); ?>" class="link-light text-decoration-none"><?php _e( 'Datenschutzrichtlinie', 'oe_shop' ); ?></a> | <a href="<?php echo get_theme_mod( 'shop_footer_terms_link', '#' ); ?>" class="link-light text-decoration-none"><?php _e( 'Nutzungsbedingungen', 'oe_shop' ); ?></a> 
+                        </div>                         
                     </div>                     
                 </div>                 
             </div>             
